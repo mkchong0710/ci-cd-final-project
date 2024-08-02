@@ -51,7 +51,6 @@ spec:
     - name: nosetests
       image: python:3.9-slim
       workingDir: $(workspaces.source.path)
-      args: ["clone"]["$(params.repo-url)"]
       script: |
         #!/bin/bash
         set -e
